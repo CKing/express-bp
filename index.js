@@ -34,7 +34,7 @@ const modelFiles = fs.readdirSync(modelPath).map(fileName => require(path.join(m
 // first iteration: define all the models
 const models = modelFiles.map(model => model.__definition = model.define(sequelize))
 // second iteration: define all the relations
-modelFiles.forEach(model => model.relation && model.relation(model.__definition, models))
+modelFiles.forEach(model => model.relation && model.relation(model.__definition, sequelize.modelManager))
 // sync changes to schema
 sequelize.sync({ force: DEBUG_MODE })
 
