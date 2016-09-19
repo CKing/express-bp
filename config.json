@@ -1,0 +1,16 @@
+{
+  "database": {
+    "host": "localhost",
+    "user": "root",
+    "pass": "",
+    "name": "express-bp"
+  },
+
+  "session": {
+    "secret": "not so seekret"
+  },
+
+  "http": {
+    "port": 12345
+  }
+}

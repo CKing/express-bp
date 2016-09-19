@@ -1,0 +1,33 @@
+{
+  "name": "express-bp",
+  "version": "1.0.0",
+  "description": "express boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CKing/express-bp.git"
+  },
+  "keywords": [
+    "express",
+    "boilerplate"
+  ],
+  "author": "Christopher König <criss@paars.de>",
+  "license": "MS-PL",
+  "bugs": {
+    "url": "https://github.com/CKing/express-bp/issues"
+  },
+  "homepage": "https://github.com/CKing/express-bp#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "connect-session-sequelize": "^3.1.0",
+    "express": "^4.14.0",
+    "express-nunjucks": "^2.0.1",
+    "express-session": "^1.14.1",
+    "method-override": "^2.3.6",
+    "morgan": "^1.7.0",
+    "sequelize": "^3.24.3"
+  }
+}
