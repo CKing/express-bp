@@ -19,8 +19,7 @@ const DEBUG_MODE = process.env.NODE_ENV !== "production"
 const Sequelize = require("sequelize")
 const sequelize = new Sequelize(config.database.name, config.database.user, config.database.pass, {
   host: config.database.host,
-  dialect: "sqlite",
-  filename: "sheeet",
+  dialect: "mysql",
   pool: {
     max: 5,
     min: 0,
